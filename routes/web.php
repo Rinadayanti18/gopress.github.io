@@ -104,7 +104,7 @@ Route::get('/order', function () {
     ]);
 });
 
-Route::get('/signin', [LoginController::class, 'index']);  
+Route::get('/signin', [LoginController::class, 'index'])->middleware('guest');  
 
 Route::post('/signin', [LoginController::class, 'authenticate']);  
 

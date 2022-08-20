@@ -20,10 +20,24 @@
 
     <header>
         <nav class="navbars">
+            @auth
+            <div class="dropdown">
+                <img class="imgNavbar" src="img/GoPress.png">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  Welcome Back, {{ auth()->user()->name }}
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">My Profil</a></li>
+                  <li><a class="dropdown-item" href="#">Logout</a></li>
+                </ul>
+              </div>
+            @else
             <div class="InUp">
                 <img class="imgNavbar" src="img/GoPress.png">
                 <div class="In"> <a style="text-decoration: none" href="/signin"> Sign In/Up</a></div>
-            </div>
+            </div>  
+            @endauth
+            
 
 
             <ul class="navigation">
