@@ -23,6 +23,12 @@ tatau dan
 >>>>>>> 123e304b0a9cfeaa76e7d73f4f557985ac46225d
 tesssssssssssssss1233224312432413
 
+<<<<<<< HEAD
 qweqweqwewqewqe
+=======
+
+Apul bangsat
+
+>>>>>>> 8b484289c35f320e6f72077a71f1d59c81662c8c
 =======
 >>>>>>> 35f25c8d18c70ddc684638be3c3c3aaedd0a7aee
