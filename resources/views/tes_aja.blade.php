@@ -1,8 +1,9 @@
 ganteng broookkkk
 tesss tesss maniss
-<<<<<<< HEAD
+<<<<<<< HEAD PALA
+
 aku mau tes lagi yo
-=======
+
 ganti aja
 
 brisiiikkkkk
