@@ -12,3 +12,4 @@ brisiiikkkkk
 ada apa ni
 haloo againn
 apa aja yang updarte
+tatau dan
