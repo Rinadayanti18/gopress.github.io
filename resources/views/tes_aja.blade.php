@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ganteng broookkkk
 tesss tesss maniss
 <<<<<<< HEAD PALA
@@ -23,3 +24,5 @@ tatau dan
 tesssssssssssssss1233224312432413
 
 qweqweqwewqewqe
+=======
+>>>>>>> 35f25c8d18c70ddc684638be3c3c3aaedd0a7aee
