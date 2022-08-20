@@ -1,0 +1,208 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: "Traveling _Typewriter";
+    color: white;
+    text-align: center;
+}
+
+.container{
+    width: 1920px 1080px;
+
+    /* border: 5px solid #333; */
+    box-sizing: border-box;
+    /* padding: 5px; */
+}
+
+header{
+    display: flex;
+	justify-content: space-around;
+	align-items: center;
+    background-color: #10002B;
+    /* opacity: 0.7; */
+    padding: 2px 0;
+}
+
+.InUp{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+
+.In{
+    background-color: #3c609c;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.In:hover{
+    background-color: white;
+    color: #3c609c;
+    border-radius: 5px;
+}
+
+.Up{
+    color: #3c609c;
+    padding: 6px;
+   
+}
+
+.Up:hover{
+    /* background-color: #3c609c; */
+    color: white;
+    border-radius: 5px;
+}
+
+.imgNavbar{
+    width: 100px;
+    height: 100px;
+}
+
+.navigation{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.navigation>li{
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+.navigation>li:hover{
+    background-color: white;
+    color: #3c609c;
+    border-radius: 5px;
+}
+
+
+main{
+    background-color: whitesmoke;
+    /* padding: 2px; */
+}
+
+.imageSlider{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    
+}
+
+.content2{
+    color: #10002B;
+    background-color: #10002B;
+    padding: 10px;
+    
+}
+
+.title-content3{
+    
+    display: inline-block;
+   width: 200px;
+    height: 40px;
+    align-items: center;
+    background-color: #10002B;
+    border: 5px solid #10002B;
+    border-radius: 4px;
+    
+    
+}
+
+.theTittle{
+    color: white;
+    font-family: "Baby Sparkle";
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+.theTittle:hover{
+   color: goldenrod;
+}
+
+.content3{
+   
+    padding-bottom: 20px;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+.wrapper-content3{
+width: 200px;
+height: 200px;
+border: 5px solid #10002B;
+border-radius: 6px;
+margin: 5px;
+padding-top: 2px;
+padding-left: 2px;
+padding-right: 2px;
+padding-bottom: 2px;
+}
+
+.image-content3{
+    width: 200px;
+    height: 200px;
+}
+
+footer{
+ 
+    background-color: rgb(24, 15, 107);
+    padding: 100px;
+    bottom: 0;
+    
+}
+
+.footer-wrapper{
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    
+}
+
+.contoh{
+    justify-content: space-between;
+    display: flex;
+    
+}
+
+.left-footer{
+    list-style: none;
+    font-family: "";
+    font-weight: bold;
+    
+}
+
+.callUs-footer{
+    text-align: center;
+    /* color: white; */
+}
+
+.telp-footer{
+    text-align: center;
+}
+
+.telp-footer{
+    text-align: left;
+}
+
+.day-footer{
+    text-align: left;
+   
+}
+
+.ayam{
+    text-align: left;
+}
+
+.address-footer{
+   text-align: left;
+   
+  
+
+}
+.center-footer{
+    list-style: none;
+    justify-content: center;
+}
