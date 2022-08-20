@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ganteng broookkkk
 tesss tesss maniss
 <<<<<<< HEAD PALA
@@ -25,3 +26,5 @@ tesssssssssssssss1233224312432413
 
 Apul bangsat
 
+=======
+>>>>>>> 35f25c8d18c70ddc684638be3c3c3aaedd0a7aee
