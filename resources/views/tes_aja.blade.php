@@ -23,5 +23,3 @@ tatau dan
 tesssssssssssssss1233224312432413
 
 
-Apul bangsat
-
