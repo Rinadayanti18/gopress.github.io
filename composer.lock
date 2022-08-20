@@ -8,7 +8,6 @@
     "packages": [
         {
             "name": "brick/math",
-<<<<<<< HEAD
             "version": "0.10.2",
             "source": {
                 "type": "git",
@@ -19,7 +18,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/brick/math/zipball/459f2781e1a08d52ee56b0b1444086e038561e3f",
                 "reference": "459f2781e1a08d52ee56b0b1444086e038561e3f",
-=======
             "version": "0.9.3",
             "source": {
                 "type": "git",
@@ -30,26 +28,25 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/brick/math/zipball/ca57d18f028f84f777b2168cd1911b0dee2343ae",
                 "reference": "ca57d18f028f84f777b2168cd1911b0dee2343ae",
->>>>>>> f680dc6 (v1.1)
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
-<<<<<<< HEAD
+
                 "php": "^7.4 || ^8.0"
             },
             "require-dev": {
                 "php-coveralls/php-coveralls": "^2.2",
                 "phpunit/phpunit": "^9.0",
                 "vimeo/psalm": "4.25.0"
-=======
+
                 "php": "^7.1 || ^8.0"
             },
             "require-dev": {
                 "php-coveralls/php-coveralls": "^2.2",
                 "phpunit/phpunit": "^7.5.15 || ^8.5 || ^9.0",
                 "vimeo/psalm": "4.9.2"
->>>>>>> f680dc6 (v1.1)
+
             },
             "type": "library",
             "autoload": {
@@ -74,21 +71,21 @@
             ],
             "support": {
                 "issues": "https://github.com/brick/math/issues",
-<<<<<<< HEAD
+
                 "source": "https://github.com/brick/math/tree/0.10.2"
-=======
+
                 "source": "https://github.com/brick/math/tree/0.9.3"
->>>>>>> f680dc6 (v1.1)
+
             },
             "funding": [
                 {
                     "url": "https://github.com/BenMorel",
                     "type": "github"
-<<<<<<< HEAD
+
                 }
             ],
             "time": "2022-08-10T22:54:19+00:00"
-=======
+
                 },
                 {
                     "url": "https://tidelift.com/funding/github/packagist/brick/math",
@@ -96,7 +93,7 @@
                 }
             ],
             "time": "2021-08-15T20:50:18+00:00"
->>>>>>> f680dc6 (v1.1)
+
         },
         {
             "name": "dflydev/dot-access-data",
