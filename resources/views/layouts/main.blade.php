@@ -23,12 +23,12 @@
             @auth
             <div class="dropdown">
                 <img class="imgNavbar" src="img/GoPress.png">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                  Welcome Back, {{ auth()->user()->name }}
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Welcome Back, {{ auth()->user()->name }}
                 </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                  <li><a class="dropdown-item" href="#">My Profil</a></li>
-                  <li><a class="dropdown-item" href="#">Logout</a></li>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">My Profil</a></li>
+                    <li><a class="dropdown-item" href="#">Logout</a></li>
                 </ul>
               </div>
             @else
