@@ -104,12 +104,15 @@ Route::get('/order', function () {
     ]);
 });
 
-Route::get('/signin', [LoginController::class, 'index'])->middleware('guest');  
+Route::get('/signin', [LoginController::class, 'index'])->name('login')->middleware('guest');  
 
 Route::post('/signin', [LoginController::class, 'authenticate']);  
 
-Route::get('/signup', [RegisterController::class, 'index']);  
+Route::post('/logout', [LoginController::class, 'logout']);  
+
+Route::get('/signup', [RegisterController::class, 'index'])->middleware('guest');  
 
 Route::post('/signup', [RegisterController::class, 'store']);  
 
+Route::get('/dashboard',[LoginController::class,'dashboard'])->middleware('auth');
 
