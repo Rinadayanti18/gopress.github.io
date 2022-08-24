@@ -24,6 +24,13 @@ Route::get('/', function () {
 
 });
 
+Route::get('/welcome', function () {
+    return view("welcome", [
+        "title" => "Home"
+    ]);
+
+});
+
 Route::get('/company', function () {
     return view("aboutUsFolder/company",[
         "title" => "Company"
