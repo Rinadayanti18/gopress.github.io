@@ -1,1 +1,1 @@
-<h1>Welcome Back, anjay</h1>
+<h1>Welcome Back, {{ auth()->user()->name }}</h1>
