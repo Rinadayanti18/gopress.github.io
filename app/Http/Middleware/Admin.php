@@ -24,7 +24,7 @@ class Admin
                 return $next($request);
             } else 
             {
-                return redirect('/');
+                return redirect('/profil');
             } 
         } else 
         {

@@ -12,4 +12,9 @@ class HomeController extends Controller
     {
         return view('profileFolder.dashboard');
     }
+
+    public function profil()
+    {
+        return view('profileFolder.profil');
+    }
 }

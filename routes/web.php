@@ -115,7 +115,7 @@ Route::get('/signup', [RegisterController::class, 'index'])->middleware('guest')
 
 Route::post('/signup', [RegisterController::class, 'store']);  
 
-//Route::get('/profil',[LoginController::class,'dashboard'])->middleware('auth');
+Route::get('/profil',[HomeController::class,'profil'])->middleware('auth');
 
 Route::middleware(['auth','is_admin']) -> group(function(){
     Route::resource('dashboard', HomeController::class);
