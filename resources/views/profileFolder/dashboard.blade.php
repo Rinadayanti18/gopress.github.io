@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Go express Indonesia | Dashboard</title>
+    <title>Go express Indonesia |  {{ $title }}</title>
 
     
 
