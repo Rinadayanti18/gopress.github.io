@@ -38,18 +38,15 @@
     }
 
     .profile-button:focus {
-        background: #10002B
-        box-shadow: none
+        background: #10002B box-shadow: none
     }
 
     .profile-button:active {
-        background: #10002B
-        box-shadow: none
+        background: #10002B box-shadow: none
     }
 
     .back:hover {
-        color: #10002B
-        cursor: pointer
+        color: #10002B cursor: pointer
     }
 
     .labels {
@@ -57,8 +54,7 @@
     }
 
     .add-experience:hover {
-        background: #10002B
-        color: #fff;
+        background: #10002B color: #fff;
         cursor: pointer;
         border: solid 1px #10002B
     }
@@ -81,41 +77,45 @@
                     <div class="d-flex justify-content-between align-items-center mb-3">
                         <h4 class="text-right">Profile Settings</h4>
                     </div>
-                    <form action="/profil" method="post">
-                        @csrf
 
-                        <div class="row mt-2">
-                            <div class="col-md-6"><label class="labels">Name</label>
-                                <input type="text" class="form-control" placeholder="{{ auth()->user()->name }}" id="name"></div>
-                            <div class="col-md-6"><label class="labels">Username</label><input type="text"
-                                    class="form-control" id="username" placeholder="{{ auth()->user()->username }}">
-                            </div>
+
+                    <div class="row mt-2">
+                        <div class="col-md-6"><label class="labels">Name</label>
+                            <input type="text" class="form-control" placeholder="{{ auth()->user()->name }}"
+                                id="name">
                         </div>
-                        <div class="row mt-3">
-                            <div class="col-md-12"><label class="labels">Mobile Number</label><input type="text"
-                                    class="form-control" placeholder="enter phone number" value=""></div>
-                            <div class="col-md-12"><label class="labels">Address Line 1</label><input type="text"
-                                    class="form-control" placeholder="enter address line 1" value=""></div>
-                            <div class="col-md-12"><label class="labels">Address Line 2</label><input type="text"
-                                    class="form-control" placeholder="enter address line 2" value=""></div>
-                            <div class="col-md-12"><label class="labels">Postcode</label><input type="text"
-                                    class="form-control" placeholder="enter address line 2" value=""></div>
-                            <div class="col-md-12"><label class="labels">State</label><input type="text"
-                                    class="form-control" placeholder="enter address line 2" value=""></div>
-                            <div class="col-md-12"><label class="labels">Area</label><input type="text"
-                                    class="form-control" placeholder="enter address line 2" value=""></div>
-                            <div class="col-md-12"><label class="labels">Email ID</label><input type="text"
-                                    class="form-control" placeholder="enter email id" value=""></div>
-                            <div class="col-md-12"><label class="labels">Education</label><input type="text"
-                                    class="form-control" placeholder="education" value=""></div>
+                        <div class="col-md-6"><label class="labels">Username</label><input type="text"
+                                class="form-control" id="username" placeholder="{{ auth()->user()->username }}">
                         </div>
-                        <div class="row mt-3">
-                            <div class="col-md-6"><label class="labels">Country</label><input type="text"
-                                    class="form-control" placeholder="country" value=""></div>
-                            <div class="col-md-6"><label class="labels">State/Region</label><input type="text"
-                                    class="form-control" value="" placeholder="state"></div>
-                        </div>
-                        <div class="mt-5 text-center"> <button class="w-100 btn btn-lg btn-primary mt-3 profile-button" type="submit">Edit Profil</button></div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-12"><label class="labels">Mobile Number</label><input type="text"
+                                class="form-control" placeholder="enter phone number" value=""></div>
+                        <div class="col-md-12"><label class="labels">Address Line 1</label><input type="text"
+                                class="form-control" placeholder="enter address line 1" value=""></div>
+                        <div class="col-md-12"><label class="labels">Address Line 2</label><input type="text"
+                                class="form-control" placeholder="enter address line 2" value=""></div>
+                        <div class="col-md-12"><label class="labels">Postcode</label><input type="text"
+                                class="form-control" placeholder="enter address line 2" value=""></div>
+                        <div class="col-md-12"><label class="labels">State</label><input type="text"
+                                class="form-control" placeholder="enter address line 2" value=""></div>
+                        <div class="col-md-12"><label class="labels">Area</label><input type="text"
+                                class="form-control" placeholder="enter address line 2" value=""></div>
+                        <div class="col-md-12"><label class="labels">Email ID</label><input type="text"
+                                class="form-control" placeholder="enter email id" value=""></div>
+                        <div class="col-md-12"><label class="labels">Education</label><input type="text"
+                                class="form-control" placeholder="education" value=""></div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-6"><label class="labels">Country</label><input type="text"
+                                class="form-control" placeholder="country" value=""></div>
+                        <div class="col-md-6"><label class="labels">State/Region</label><input type="text"
+                                class="form-control" value="" placeholder="state"></div>
+                    </div>
+                    <div class="mt-5 text-center"> <button class="w-100 btn btn-lg btn-primary mt-3 profile-button"
+                            type="submit"><a href="/profil/{{auth()->user()->username}}"
+                                style="text-decoration: none; color: white"><span data-feather>Edit
+                                    Profil</span></a></button></div>
                     </form>
                 </div>
 

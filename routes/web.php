@@ -117,6 +117,7 @@ Route::post('/signup', [RegisterController::class, 'store']);
 
 Route::get('/profil',[HomeController::class,'profil'])->middleware('auth');
 
+Route::get('/profil/{{auth()->user()->username}}',[HomeController::class,'edit'])->middleware('auth');
 // Route::prefix('profil') -> group(function () {
     
 // });
