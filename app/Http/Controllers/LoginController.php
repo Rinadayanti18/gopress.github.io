@@ -15,7 +15,7 @@ class LoginController extends Controller
         ]);
     }
 
-    public function dashboard()
+    public function dashboard(Request $request)
     {
         return view('profileFolder.dashboard');
     }

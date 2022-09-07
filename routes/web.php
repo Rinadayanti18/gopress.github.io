@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
 
@@ -114,5 +115,14 @@ Route::get('/signup', [RegisterController::class, 'index'])->middleware('guest')
 
 Route::post('/signup', [RegisterController::class, 'store']);  
 
-Route::get('/dashboard',[LoginController::class,'dashboard'])->middleware('auth');
+Route::get('/profil',[HomeController::class,'profil'])->middleware('auth');
+
+Route::get('/profil/{{auth()->user()->username}}',[HomeController::class,'edit'])->middleware('auth');
+// Route::prefix('profil') -> group(function () {
+    
+// });
+
+Route::middleware(['auth','is_admin']) -> group(function(){
+    Route::resource('dashboard', HomeController::class);
+});
 
