@@ -1,6 +1,6 @@
 @extends('layouts.main')
 @section('container')
-<h1 style="text-align: center;">Form Order</h1><br>
+<h1 style="text-align: center;">Form Order</h1><br><br>
 <div class="row g-5">
         <div class="col-md">
                 <h3>Sender Information</h3>
@@ -113,7 +113,12 @@
                                 </div>
                         </div>
                         <div class="col-12">
-                                <button type="submit" class="btn btn-warning">Deliver Now</button>
+                                <button onclick="myalert()" type="submit" class="btn btn-warning">Deliver Now</button>
+                                <script>
+                                        function myalert(){
+                                                alert("Apakah anda yakin data yang dimasukan sudah benar !!")
+                                        }
+                                </script>
                         </div>
                 </form>
         </div>
