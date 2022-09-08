@@ -105,6 +105,12 @@ Route::get('/order', function () {
     ]);
 });
 
+Route::get('/pesan', function(){
+    return view ("serviceFolder/pesan",[
+        "title" => "Order2"
+    ]);
+});
+
 Route::get('/signin', [LoginController::class, 'index'])->name('login')->middleware('guest');  
 
 Route::post('/signin', [LoginController::class, 'authenticate']);  
