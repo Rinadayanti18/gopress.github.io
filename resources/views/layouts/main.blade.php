@@ -83,6 +83,10 @@
             @include('layouts.partials.navbarLogin')
         </div>
 
+        <div class="navbar_display" style="{{ $title === 'Order' ? 'display : block' : '' }}">
+            @include('layouts.partials.navbarOrder')
+        </div>
+
         <div class="navbar_display" style="{{ $title === 'Services' ? 'display : block' : '' }}">
             @include('layouts.partials.navbarService')
         </div>
