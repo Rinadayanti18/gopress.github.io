@@ -16,11 +16,11 @@
                         <div class="col-md-3">
                                 <label for="inputStateSender" class="form-label">No.</label>
                                 <select id="inputStateSender" class="form-select">
-                                <option selected>+62</option>
-                                <option>+12</option>
-                                <option>+34</option>
-                                <option>+51</option>
-                                <option>+26</option>
+                                        <option selected>+62</option>
+                                        <option>+12</option>
+                                        <option>+34</option>
+                                        <option>+51</option>
+                                        <option>+26</option>
                                 </select>
                         </div>
                         <div class="col-md-6">
@@ -56,11 +56,11 @@
                         <div class="col-md-3">
                                 <label for="inputStateRecipient" class="form-label">No.</label>
                                 <select id="inputStateRecipient" class="form-select">
-                                <option selected>+62</option>
-                                <option>+12</option>
-                                <option>+34</option>
-                                <option>+51</option>
-                                <option>+26</option>
+                                        <option selected>+62</option>
+                                        <option>+12</option>
+                                        <option>+34</option>
+                                        <option>+51</option>
+                                        <option>+26</option>
                                 </select>
                         </div>
                         <div class="col-md-6">
