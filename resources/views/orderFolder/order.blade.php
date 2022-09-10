@@ -1,9 +1,9 @@
 @extends('layouts.main')
 @section('container')
-<h1 style="text-align: center;">Form Order</h1><br><br>
+<h1 style="text-align: center;font-weight:500;letter-spacing: 7px;text-shadow: 2px -2px">Form Order</h1><br><br>
 <div class="row g-5">
-        <div class="col-md">
-                <h3>Sender Information</h3>
+        <div class="col-md" style="background-color: #EEEEEE;"><br>
+                <h3 style="text-align:center;">Sender Information</h3><hr>
                 <form class="row g-3">
                         <div class="col-md-12">
                                 <label for="inputNameSender" class="form-label">Nama Lengkap</label>
@@ -39,11 +39,11 @@
                                 <label for="inputKodeposSender" class="form-label">Kode Pos</label>
                                 <input type="number" class="form-control" id="inputKodeposSender">
                         </div>
-                </form>
+                </form><br>
         </div>
 
-        <div class="col-md">
-                <h3>Recipient Information</h3>
+        <div class="col-md" style="background-color: #CFD2CF;"><br>
+                <h3 style="text-align:center;">Recipient Information</h3><hr>
                 <form class="row g-3">
                         <div class="col-md-12">
                                 <label for="inputNameRecipient" class="form-label">Nama Lengkap</label>
@@ -79,11 +79,11 @@
                                 <label for="inputKodeposRecipient" class="form-label">Kode Pos</label>
                                 <input type="number" class="form-control" id="inputKodeposRecipient">
                         </div>
-                </form>
+                </form><br>
         </div>
 
-        <div class="col-md">
-                <h3>Package Information</h3>
+        <div class="col-md" style="background-color: #EEEEEE;"><br>
+                <h3 style="text-align:center;">Package Information</h3><hr>
                 <form class="row g-3">
                         <div class="col-md-12">
                                 <label for="inputItem" class="form-label">Nama Item</label>
@@ -108,7 +108,8 @@
                         <div class="col-12">
                                 <div class="form-check">
                                         <input class="form-check-input" type="checkbox" id="gridCheck">
-                                        <label class="form-check-label" for="gridCheck">Ikuti Aturan Kami?
+                                        <label class="form-check-label" for="gridCheck">
+                                                <a href="/FAQ" style="text-decoration:none;color:black;color:hover:red;">Ikuti Aturan Kami?</a>
                                         </label>
                                 </div>
                         </div>
@@ -120,7 +121,7 @@
                                         }
                                 </script>
                         </div>
-                </form>
+                </form><br>
         </div>
 </div>
 
