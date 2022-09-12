@@ -1,6 +1,6 @@
 <style>
 h1{
-    color:red;
+    color:black;
 }
 </style>
 <div class="slider-home container-fluid content" style="padding-right:0px ; padding-left:0px;">
