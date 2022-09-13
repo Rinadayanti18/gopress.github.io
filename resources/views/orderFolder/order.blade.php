@@ -27,14 +27,17 @@
                                 <label for="inputPhoneSender" class="form-label">Handphone</label>
                                 <input type="number" class="form-control" id="inputPhoneSender" placeholder="812 - 3243 - 2342">
                         </div>
-                                <div class="col-12">
+                        <div class="col-12">
                                 <label for="inputAlamatSender" class="form-label">Alamat</label>
                                 <input type="text" class="form-control" id="inputAlamatSender">
                         </div>
-                                <div class="col-md-6">
-                                <label for="inputKotaSender" class="form-label">Kota</label>
-                                <input type="text" class="form-control" id="inputKotaSender">
-                        </div>            
+                        <!-- Memakai autocomplete, scriptnya ada di bawah -->
+                        <form autocomplete="off" action="/action_page.php">
+                                <div class="col-md-12">
+                                        <label for="myInput2" class="form-label">Kota</label>
+                                        <input class="form-control" id="myInput" type="text" name="kota1">
+                                </div>
+                        </form>            
                                 <div class="col-md-3">
                                 <label for="inputKodeposSender" class="form-label">Kode Pos</label>
                                 <input type="number" class="form-control" id="inputKodeposSender">
@@ -71,10 +74,13 @@
                                 <label for="inputAlamatRecipient" class="form-label">Alamat</label>
                                 <input type="textarea" class="form-control" id="inputAlamatRecipient" >
                         </div>
-                        <div class="col-md-6">
-                                <label for="inputKotaRecipient" class="form-label">Kota</label>
-                                <input type="text" class="form-control" id="inputKotaRecipient">
-                        </div>            
+                        <!-- Memakai autocomplete, scriptnya ada di bawah -->
+                        <form autocomplete="off" action="/action_page.php">
+                                <div class="col-md-12">
+                                        <label for="myInput2" class="form-label">Kota</label>
+                                        <input class="form-control" id="myInput" type="text" name="kota2">
+                                </div>
+                        </form>            
                         <div class="col-md-3">
                                 <label for="inputKodeposRecipient" class="form-label">Kode Pos</label>
                                 <input type="number" class="form-control" id="inputKodeposRecipient">
@@ -120,16 +126,12 @@
                                                 alert("Apakah anda yakin data yang dimasukan sudah benar !!")
                                         }
                                 </script>
-                                <h2>Autocomplete</h2>
-
-<p>Start typing:</p>
-
+<!-- Script untuk autocomplete -->
 <!--Make sure the form has the autocomplete function switched off:-->
 <form autocomplete="off" action="/action_page.php">
-  <div class="autocomplete" style="width:300px;">
-    <input id="myInput" type="text" name="myCountry" placeholder="Country">
+  <div class="col-md-12">
+    <input class="form-control" id="myInput" type="text" name="myCountry" placeholder="Country">
   </div>
-  <input type="submit">
 </form>
 
 <script>
@@ -236,12 +238,7 @@ var countries = ["Afghanistan","Albania","Algeria","Andorra","Angola","Anguilla"
 /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
 autocomplete(document.getElementById("myInput"), countries);
 </script>
-<?php
-echo "Today is " . date("Y/m/d") . "<br>";
-echo "Today is " . date("Y.m.d") . "<br>";
-echo "Today is " . date("Y-m-d") . "<br>";
-echo "Today is " . date("l");
-?>
+
                         </div>
                 </form><br>
         </div>
