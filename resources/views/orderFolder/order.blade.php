@@ -2,16 +2,18 @@
 @section('container')
 <h1 style="text-align: center;font-weight:500;letter-spacing: 7px;text-shadow: 2px -2px">Form Order</h1><br><br>
 <div class="row g-5">
-        <div class="col-md" style="background-color: #EEEEEE;"><br>
-                <h3 style="text-align:center;">Sender Information</h3><hr>
+        <div class="col-md"><br>
+                <h3 style="text-align:center;">Sender Information</h3><hr style="border: 2px solid ;">
                 <form class="row g-3">
                         <div class="col-md-12">
                                 <label for="inputNameSender" class="form-label">Nama Lengkap</label>
                                 <input type="text" class="form-control" id="inputNameSender" >
+                                <hr>
                         </div>
                         <div class="col-md-12">
                                 <label for="inputEmailSender" class="form-label">Email</label>
                                 <input type="email" class="form-control" id="inputEmailSender">
+                                <hr>
                         </div>
                         <div class="col-md-3">
                                 <label for="inputStateSender" class="form-label">No.</label>
@@ -22,39 +24,45 @@
                                         <option>+51</option>
                                         <option>+26</option>
                                 </select>
+                                <hr>
                         </div>
                         <div class="col-md-6">
                                 <label for="inputPhoneSender" class="form-label">Handphone</label>
                                 <input type="number" class="form-control" id="inputPhoneSender" placeholder="812 - 3243 - 2342">
+                                <hr>
                         </div>
                         <div class="col-12">
                                 <label for="inputAlamatSender" class="form-label">Alamat</label>
                                 <input type="text" class="form-control" id="inputAlamatSender">
+                                <hr>
                         </div>
-                        <!-- Memakai autocomplete, scriptnya ada di bawah -->
+                        <!-- tag form Memakai autocomplete, scriptnya js ada di bawah -->
                         <form autocomplete="off" action="/action_page.php">
                                 <div class="col-md-12">
-                                        <label for="myInput1" class="form-label">Kota</label>
+                                        <label for="myInput1" class="form-label">Provinsi, Kota</label>
                                         <input class="form-control" id="myInput" type="text" name="kota1">
+                                        <hr>
                                 </div>
                         </form>            
                                 <div class="col-md-3">
-                                <label for="inputKodeposSender" class="form-label">Kode Pos</label>
-                                <input type="number" class="form-control" id="inputKodeposSender">
+                                        <label for="inputKodeposSender" class="form-label">Kode Pos</label>
+                                        <input type="number" class="form-control" id="inputKodeposSender">
                         </div>
                 </form><br>
         </div>
 
-        <div class="col-md" style="background-color: #CFD2CF;"><br>
-                <h3 style="text-align:center;">Recipient Information</h3><hr>
+        <div class="col-md"><br>
+                <h3 style="text-align:center;">Recipient Information</h3><hr style="border: 2px solid ;">
                 <form class="row g-3">
                         <div class="col-md-12">
                                 <label for="inputNameRecipient" class="form-label">Nama Lengkap</label>
                                 <input type="text" class="form-control" id="inputNameRecipient">
+                                <hr>
                         </div>
                                 <div class="col-md-12">
                                 <label for="inputEmailRecipient" class="form-label">Email</label>
                                 <input type="email" class="form-control" id="inputEmailRecipient">
+                                <hr>
                         </div>
                         <div class="col-md-3">
                                 <label for="inputStateRecipient" class="form-label">No.</label>
@@ -65,20 +73,24 @@
                                         <option>+51</option>
                                         <option>+26</option>
                                 </select>
+                                <hr>
                         </div>
                         <div class="col-md-6">
                                 <label for="inputPhoneRecipient" class="form-label">Handphone</label>
                                 <input type="number" class="form-control" id="inputPhoneRecipient" placeholder="812 - 3243 - 2342">
+                                <hr>
                         </div>
                         <div class="col-12">
                                 <label for="inputAlamatRecipient" class="form-label">Alamat</label>
                                 <input type="textarea" class="form-control" id="inputAlamatRecipient" >
+                                <hr>
                         </div>
-                        <!-- Memakai autocomplete, scriptnya ada di bawah -->
+                        <!-- tag form Memakai autocomplete, scriptnya js ada di bawah -->
                         <form autocomplete="off" action="/action_page.php">
                                 <div class="col-md-12">
-                                        <label for="myInput2" class="form-label">Kota</label>
+                                        <label for="myInput2" class="form-label">Provinsi, Kota</label>
                                         <input class="form-control" id="myInput2" type="text" name="kota2">
+                                        <hr>
                                 </div>
                         </form>            
                         <div class="col-md-3">
@@ -88,28 +100,33 @@
                 </form><br>
         </div>
 
-        <div class="col-md" style="background-color: #EEEEEE;"><br>
-                <h3 style="text-align:center;">Package Information</h3><hr>
+        <div class="col-md"><br>
+                <h3 style="text-align:center;">Package Information</h3><hr style="border: 2px solid ;">
                 <form class="row g-3">
                         <div class="col-md-12">
                                 <label for="inputItem" class="form-label">Nama Item</label>
                                 <input type="text" class="form-control" id="inputItem">
+                                <hr>
                         </div>
                         <div class="col-md-12">
                                 <label for="inputNopaket" class="form-label">Nomor Paket</label>
                                 <input type="number" class="form-control" id="inputNopaket">
+                                <hr>
                         </div>
                         <div class="col-12">
                                 <label for="inputNilaiBarang" class="form-label">Nilai Barang</label>
                                 <input type="text" class="form-control" id="inputNilaiBarang">
+                                <hr>
                         </div>
                         <div class="col-md-4">
                                 <label for="inputTinggi" class="form-label">Tinggi</label>
                                 <input type="number" class="form-control" id="inputTinggi">
+                                <hr>
                         </div>            
                         <div class="col-md-4">
                                 <label for="inputBerat" class="form-label">Berat</label>
                                 <input type="number" class="form-control" id="inputBerat">
+                                <hr>
                         </div>
                         <div class="col-12">
                                 <div class="form-check">
@@ -120,7 +137,7 @@
                                 </div>
                         </div>
                         <div class="col-12">
-                                <button onclick="myalert()" type="submit" class="btn btn-warning">Deliver Now</button>
+                                <button onclick="myalert()" type="submit" class="btn">Deliver Now</button>
                                 <script>
                                         function myalert(){
                                                 alert("Apakah anda yakin data yang dimasukan sudah benar !!")
@@ -233,8 +250,8 @@ function autocomplete(inp, arr) {
 }
 
 /*An array containing all the country names in the world:*/
-var countries = ["Banda Aceh","Langsa","Lhokseumawe","Sabang","Subulussalam","Denpasar","Pangkalpinang","Cilegon","Serang","Tangerang Selatan","Tangerang","Bengkulu","Yogyakarta","Gorontalo","Jakarta Barat","Jakarta Pusat","Jakarta Selatan","Jakarta Timur","Jakarta Utara","Sungai Penuh","Jambi","Bandung","Bekasi","Bogor","Cimahi","Cirebon","Depok","Sukabumi","Tasikmalaya","Banjar","Magelang","Pekalongan","Salatiga","Semarang","Surakarta","Tegal","Batu","Blitar","Kediri","Madiun","Malang","Mojokerto","Pasuruan","Probolinggo","Surabaya","Pontianak","Singkawang","Banjarbaru","Banjarmasin","Palangka Raya","Balikpapan","Bontang","Samarinda","Tarakan","Batam","Tanjungpinang","Bandar Lampung","Metro","Ternate","Tidore Kepulauan","Ambon","Tual","Bima","	Mataram","Kupang","Sorong","Jayapura","Dumai","Pekanbaru","Makassar", 
-"Gambia","Georgia","Germany","Ghana","Gibraltar","Greece","Greenland","Grenada","Guam","Guatemala","Guernsey","Guinea","Guinea Bissau","Guyana","Haiti","Honduras","Hong Kong","Hungary","Iceland","India","Indonesia","Iran","Iraq","Ireland","Isle of Man","Israel","Italy","Jamaica","Japan","Jersey","Jordan","Kazakhstan","Kenya","Kiribati","Kosovo","Kuwait","Kyrgyzstan","Laos","Latvia","Lebanon","Lesotho","Liberia","Libya","Liechtenstein","Lithuania","Luxembourg","Macau","Macedonia","Madagascar","Malawi","Malaysia","Maldives","Mali","Malta","Marshall Islands","Mauritania","Mauritius","Mexico","Micronesia","Moldova","Monaco","Mongolia","Montenegro","Montserrat","Morocco","Mozambique","Myanmar","Namibia","Nauro","Nepal","Netherlands","Netherlands Antilles","New Caledonia","New Zealand","Nicaragua","Niger","Nigeria","North Korea","Norway","Oman","Pakistan","Palau","Palestine","Panama","Papua New Guinea","Paraguay","Peru","Philippines","Poland","Portugal","Puerto Rico","Qatar","Reunion","Romania","Russia","Rwanda","Saint Pierre & Miquelon","Samoa","San Marino","Sao Tome and Principe","Saudi Arabia","Senegal","Serbia","Seychelles","Sierra Leone","Singapore","Slovakia","Slovenia","Solomon Islands","Somalia","South Africa","South Korea","South Sudan","Spain","Sri Lanka","St Kitts & Nevis","St Lucia","St Vincent","Sudan","Suriname","Swaziland","Sweden","Switzerland","Syria","Taiwan","Tajikistan","Tanzania","Thailand","Timor L'Este","Togo","Tonga","Trinidad & Tobago","Tunisia","Turkey","Turkmenistan","Turks & Caicos","Tuvalu","Uganda","Ukraine","United Arab Emirates","United Kingdom","United States of America","Uruguay","Uzbekistan","Vanuatu","Vatican City","Venezuela","Vietnam","Virgin Islands (US)","Yemen","Zambia","Zimbabwe"];
+var countries = ["Aceh, Banda Aceh","Aceh, Langsa","Aceh, Lhokseumawe","Aceh, Sabang","Aceh, Subulussalam","Bali, Denpasar","Bangka Belitung, Pangkalpinang","Banten, Cilegon","Banten, Serang","Banten, Tangerang Selatan","Banten, Tangerang","Bengkulu, Bengkulu","DIY, Yogyakarta","Gorontalo, Gorontalo","Jakarta, Jakarta Barat","Jakarta, Jakarta Pusat","Jakarta, Jakarta Selatan","Jakarta, Jakarta Timur","Jakarta, Jakarta Utara","Jambi, Sungai Penuh","Jambi, Jambi","Jawa Barat, Bandung","Jawa Barat, Bekasi","Jawa Barat, Bogor","Jawa Barat, Cimahi","Jawa Barat, Cirebon","Jawa Barat, Depok","Jawa Barat, Sukabumi","Jawa Barat, Tasikmalaya","Jawa Barat, Banjar","Jawa Tengah, Magelang","Jawa Tengah, Pekalongan","Jawa Tengah, Salatiga","Jawa Tengah, Semarang","Jawa Tengah, Surakarta","Jawa Tengah, Tegal","Jawa Timur, Batu","Jawa Timur, Blitar","Jawa Timur, Kediri","Jawa Timur, Madiun","Jawa Timur, Malang","Jawa Timur, Mojokerto","Jawa Timur, Pasuruan","Jawa Timur, Probolinggo","Jawa Timur, Surabaya","Kalimantan Barat, Pontianak","Kalimantan Barat, Singkawang","Kalimantan Selatan, Banjarbaru","Kalimantan Selatan, Banjarmasin","Kalimantan Tengah, Palangka Raya","Kalimantan Timur, Balikpapan","Kalimantan Timur, Bontang","Kalimantan Timur, Samarinda","Kalimantan Utara, Tarakan","Kepulauan Riau, Batam","Kepulauan Riau, Tanjungpinang","Lampung, Bandar Lampung","Lampung, Metro","Maluku Utara, Ternate","Maluku Utara, Tidore Kepulauan","Maluku, Ambon","Maluku, Tual","Nusa Tenggara Barat, Bima","Nusa Tenggara Barat, Mataram","Nusa Tenggara Barat, Kupang","Papua Barat,Sorong","Papua, Jayapura","Riau, Dumai","Riau, Pekanbaru","Sulawesi Selatan, Makassar", 
+"Sulawesi Selatan, Palopo","Sulawesi Selatan, Parepare","Sulawesi Tengah, Palu","Sulawesi Tenggara, Baubau","	Sulawesi Tenggara, Kendari","Sulawesi Utara, Bitung","Sulawesi Utara, Kotamobagu","Sulawesi Utara, Manado","Sulawesi Utara, Tomohon","Sumatra Barat, Bukittinggi","Sumatra Barat, Padang","Sumatra Barat, Padang Panjang","Sumatra Barat, Pariaman","Sumatra Barat, Payakumbuh","Sumatra Barat, Sawahlunto","Sumatra Barat, Solok","Sumatra Selatan, Lubuklinggau","Sumatra Selatan, Pagar Alam","Sumatra Selatan, Palembang","Sumatra Selatan, Prabumulih","Sumatra Utara, Binjai","Sumatra Utara, Gunungsitoli","Sumatra Utara, Medan","Sumatra Utara, Padangsidimpuan","Sumatra Utara, Pematangsiantar","Sumatra Utara, Sibolga","Sumatra Utara, Tanjungbalai","Sumatra Utara, Tebing Tinggi"];
 
 /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
 autocomplete(document.getElementById("myInput"), countries);
