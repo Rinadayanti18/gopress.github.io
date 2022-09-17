@@ -90,6 +90,10 @@
         <div class="navbar_display" style="{{ $title === 'Services' ? 'display : block' : '' }}">
             @include('layouts.partials.navbarService')
         </div>
+        <!-- untuk error page not found 404, tapi belum berhasil -->
+        <!-- <div class="navbar_display" style="{{ $title === 'notfound404' ? 'display : block' : '' }}">
+            @include('layouts.partials.navbar404')
+        </div> -->
 
         <div class="navbar_display"
             style="{{ $title === 'Company' ||

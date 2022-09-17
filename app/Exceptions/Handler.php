@@ -47,4 +47,15 @@ class Handler extends ExceptionHandler
             //
         });
     }
+
+    //Masih error
+    // public function render($request, Throwable $exception)
+    // {
+    //     if($this->isHttpException($exception)){
+    //         if($exception->getStatusCode() == 404){
+    //             return redirect()->route('notfound404');
+    //         }
+    //     }
+    //     return parent::render($request, $exception);
+    // }
 }

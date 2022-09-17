@@ -105,11 +105,16 @@ Route::get('/order', function () {
     ]);
 });
 
-Route::get('/pesan', function(){
-    return view ("serviceFolder/pesan",[
-        "title" => "Order2"
-    ]);
-});
+//Ini mau buat error page not found, hanya belum berhasil:
+// Route::get('/404', function(){
+//     return view ("errors/404",[
+//         "title" => "404"
+//     ]);
+// });
+
+// Route::get('/error/404', 'ErrorController@notfound404')->name('notfound404');
+
+// Route::get('/error/404', [App\Http\Controllers\ErrorController::class, 'notfound404']);
 
 Route::get('/signin', [LoginController::class, 'index'])->name('login')->middleware('guest');  
 

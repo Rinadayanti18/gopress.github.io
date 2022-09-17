@@ -45,6 +45,7 @@
                                 </div>
                         </form>            
                                 <div class="col-md-3">
+                                        <hr>
                                         <label for="inputKodeposSender" class="form-label">Kode Pos</label>
                                         <input type="number" class="form-control" id="inputKodeposSender">
                         </div>
@@ -94,6 +95,7 @@
                                 </div>
                         </form>            
                         <div class="col-md-3">
+                                <hr>
                                 <label for="inputKodeposRecipient" class="form-label">Kode Pos</label>
                                 <input type="number" class="form-control" id="inputKodeposRecipient">
                         </div>
